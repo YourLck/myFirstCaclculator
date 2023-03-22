@@ -15,7 +15,6 @@
 		5E68809029B1601600DB647D /* Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68808F29B1601600DB647D /* Operations.swift */; };
 		5E68809229B1608400DB647D /* CalcService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68809129B1608400DB647D /* CalcService.swift */; };
 		5E68809429B1679400DB647D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68809329B1679400DB647D /* Constants.swift */; };
-		5E68809629C7528E00DB647D /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E68809529C7528E00DB647D /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		5E68808F29B1601600DB647D /* Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operations.swift; sourceTree = "<group>"; };
 		5E68809129B1608400DB647D /* CalcService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcService.swift; sourceTree = "<group>"; };
 		5E68809329B1679400DB647D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5E68809529C7528E00DB647D /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				5E68808B29B15E9300DB647D /* Application */,
-				5E68808A29B15E6600DB647D /* Controller */,
 				5E68808929B15E5B00DB647D /* Model */,
 				5E68808829B15E2400DB647D /* MainViewController */,
 				5E68807D29B154AE00DB647D /* Assets.xcassets */,
@@ -87,16 +84,8 @@
 				5E68808F29B1601600DB647D /* Operations.swift */,
 				5E68809129B1608400DB647D /* CalcService.swift */,
 				5E68809329B1679400DB647D /* Constants.swift */,
-				5E68809529C7528E00DB647D /* AppColors.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		5E68808A29B15E6600DB647D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		5E68808B29B15E9300DB647D /* Application */ = {
@@ -190,7 +179,6 @@
 				5E68807529B154AC00DB647D /* AppDelegate.swift in Sources */,
 				5E68807729B154AC00DB647D /* SceneDelegate.swift in Sources */,
 				5E68809029B1601600DB647D /* Operations.swift in Sources */,
-				5E68809629C7528E00DB647D /* AppColors.swift in Sources */,
 				5E68809229B1608400DB647D /* CalcService.swift in Sources */,
 				5E68809429B1679400DB647D /* Constants.swift in Sources */,
 			);

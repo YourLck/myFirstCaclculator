@@ -105,6 +105,34 @@ class CalcService {
         makeCalculation(operation: currentOperation)
     }
     
+    func changeSign() {
+        var temp = currentNumber
+        if temp.contains("-") {
+            let sign = ["-"]
+            temp = String(temp.filter { !sign.contains(String($0)) })
+            displayView.updateDisplay(text: temp)
+            currentNumber = temp
+        } else {
+            temp = "-" + currentNumber
+            displayView.updateDisplay(text: currentNumber)
+            result = currentNumber
+            firstNumber = Double(result)!
+        }
+    }
     
+    func percent() {
+        currentNumber = String(Double(currentNumber)! / 100)
+        displayView.updateDisplay(text: currentNumber)
+        result = currentNumber
+        firstNumber = Double(result)!
+    }
     
+    func dot() {
+        if currentNumber.contains(".") {
+            return
+        } else {
+            currentNumber += "."
+            displayView.updateDisplay(text: currentNumber)
+        }
+    }
 }

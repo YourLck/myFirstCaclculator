@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         service = CalcService(displayView: self)
-        view.backgroundColor = .systemRed
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         configureApperance()
     }
@@ -38,8 +38,7 @@ class ViewController: UIViewController {
         case 0...9:
             service?.numberAction(number: sender.tag)
         case 10:
-            print()
-//            service?.dot()
+            service?.dot()
         case 11:
             service?.makeResult()
         case 12:
@@ -51,11 +50,9 @@ class ViewController: UIViewController {
         case 15:
             service?.acAction()
         case 16:
-            print()
-//            service?.changeSign()
+            service?.changeSign()
         case 17:
-            print()
-//            service?.present()
+            service?.percent()
         case 18:
             service?.division()
 
@@ -80,7 +77,7 @@ private extension ViewController {
                                   y: 60,
                                   width: Constants.screenWidth,
                                   height: Constants.screenHight - 60)
-        mainVStack.backgroundColor = .systemBlue
+        mainVStack.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         self.view.addSubview(mainVStack)
     }
@@ -90,17 +87,17 @@ private extension ViewController {
                                     y: 0,
                                     width: Int(Constants.screenWidth),
                                     height: Int(Constants.screenHight - (82*5) - 60 - 30))
-        displayViews.backgroundColor = .lightGray
+        displayViews.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         
         display.frame = CGRect(x: 15,
                                y: 15,
                                width: displayViews.frame.width - 30,
                                height: displayViews.frame.height - 15)
-        display.backgroundColor = .gray
+        display.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         display.textAlignment = .right
         display.contentVerticalAlignment = .bottom
         display.text = "0"
-        display.textColor = .white
+        display.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         display.font = UIFont.boldSystemFont(ofSize: 80)
         
         displayViews.addSubview(display)
@@ -194,6 +191,7 @@ private extension ViewController {
         
         mainVStack.addSubview(line4)
     }
+    
     func setupLine5() {
         let line5 = createHStack(yPoints: Int(displayViews.frame.height) + 328)
         
@@ -229,7 +227,8 @@ private extension ViewController {
                                             width: Int(Constants.screenWidth/4-2),
                                             height: 80))
         button.setTitle(title, for: .normal)
-        button.backgroundColor = .systemGreen
+        button.backgroundColor = #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)
+        button.layer.cornerRadius = 10
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 30)
         button.setTitleColor(.white, for: .normal)
         button.tag = tag
@@ -243,6 +242,7 @@ private extension ViewController {
                              y: yPoints,
                              width: Int(Constants.screenWidth),
                              height: 80)
+        
         return stack
     }
 }
